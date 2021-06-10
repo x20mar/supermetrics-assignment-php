@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "87de80c2-3f16-4e5d-b670-b7314b5ada9f",
+		"name": "Supermetrics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "",
+							"description": "Client Id provided by Supermetrics",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@example.com",
+							"description": "Email Address",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "John Smith",
+							"description": "Name",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.supermetrics.com/assignment/register",
+					"protocol": "https",
+					"host": [
+						"api",
+						"supermetrics",
+						"com"
+					],
+					"path": [
+						"assignment",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
